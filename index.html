@@ -151,15 +151,14 @@
         </div>
       </div>
     </footer>
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.min.css">
     <script>
       const ipad = window.matchMedia('screen and (max-width: 767px)');
       const menu = document.querySelector('.menu');
       const burgerButton = document.querySelector('#burguer-menu');
-
+      
       ipad.addListener(validation)
-
+      
       function validation(event){
         if (event.matches) {
           burgerButton.addEventListener('click', hideShow )
@@ -168,7 +167,7 @@
         }
       }
       validation(ipad);
-
+      
       function hideShow(){
         if (menu.classList.contains('is-active')) {
           menu.classList.remove('is-active');
@@ -177,5 +176,6 @@
         }
       }
     </script>
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
   </body>
 </html>
